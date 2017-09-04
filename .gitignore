@@ -21,8 +21,7 @@ data/**
 snli_1.0*
 
 ### results
-result/**
-results/**
+result**
 log*
 
 ### caches

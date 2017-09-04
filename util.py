@@ -67,7 +67,7 @@ def pretty_duration(seconds):
 def get_args():
     parser = ArgumentParser(description='PyTorch/torchtext SNLI example')
     parser.add_argument('--epochs', type=int, default=30)
-    parser.add_argument('--batch_size', type=int, default=32)
+    parser.add_argument('--batch_size', type=int, default=128)
     parser.add_argument('--d_embed', type=int, default=300)
     parser.add_argument('--no-projection', action='store_false', dest='projection')
     parser.add_argument('--d_proj', type=int, default=300)
@@ -79,7 +79,7 @@ def get_args():
     parser.add_argument('--weight_decay', type=float, default=.000006)
     parser.add_argument('--lr_decay', action='store_false', dest='lr_decay')
     parser.add_argument('--lr_decay_rate', type=float, default=.75)
-    parser.add_argument('--lr_decay_iter', type=int, default=10000)
+    parser.add_argument('--lr_decay_iter', type=int, default=3000)
     parser.add_argument('--dev_every', type=int, default=1000)
     parser.add_argument('--save_every', type=int, default=1000)
     parser.add_argument('--dp_ratio', type=int, default=0.06)

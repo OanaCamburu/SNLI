@@ -29,7 +29,7 @@ def create_sequence(batch, lengths, batch_first=False):
                 [batch[:, i]for i in sorted_indices],
                 dim=1
         )
-    seq = rnn.pack_padded_sequence(sorted_data, sorted_lengths, batch_first=batch_first)
+    seq = rnn.pack_padded_sequence(sorted_batch, sorted_lengths, batch_first=batch_first)
     return seq, sorted_indices
 
 # Given *only* the hiddens of a PackedSequence output RNN, sort them back to original order
