@@ -1,0 +1,29 @@
+### MAC
+**/.DS_Store
+**/._*
+__*
+
+### Python
+**/__pycache__/**
+**/*.pyc
+
+### VIRTUALENV
+.Python
+bin/**
+dist/**
+include/**
+lib/**
+MANIFEST
+pip-selfcheck.json
+
+### data
+data/**
+snli_1.0*
+
+### results
+result/**
+results/**
+log*
+
+### caches
+.vector_cache/*
